@@ -54,7 +54,7 @@
 
         <template id="makeSql" name="行列数据生成SQL语句"
                   destFile="/study_output/insert.sql" templateFile="templates/study01/makeSql.gsp">
-            <acceptDataModel>json</acceptDataModel>
+            <acceptDataModel>cellList</acceptDataModel>
         </template>
     </templates>
 </autoMake>
