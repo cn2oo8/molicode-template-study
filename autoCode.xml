@@ -56,5 +56,21 @@
                   destFile="/study_output/insert.sql" templateFile="templates/study01/makeSql.gsp">
             <acceptDataModel>cellList</acceptDataModel>
         </template>
+
+
+        <!-- 用于测试生成Excel模板，引擎使用jxls模板，json数据-->
+        <template id="excelJson" name="json生成Excel文件"
+                  destFile="/study_output/test_excel_json_out.xlsx" templateFile="templates/study01/excelJson.xlsx"
+        engine="jxls">
+            <acceptDataModel>json</acceptDataModel>
+        </template>
+
+
+        <!-- 用于测试生成Excel模板，引擎使用jxls模板，行文件数据-->
+        <template id="excelLine" name="行文件生成Excel文件"
+                  destFile="/study_output/test_excel_out.xlsx" templateFile="templates/study01/excelLine.xlsx"
+                  engine="jxls">
+            <acceptDataModel>lineList</acceptDataModel>
+        </template>
     </templates>
 </autoMake>
