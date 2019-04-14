@@ -61,7 +61,7 @@
         <!-- 用于测试生成Excel模板，引擎使用jxls模板，json数据-->
         <template id="excelJson" name="json生成Excel文件"
                   destFile="/study_output/test_excel_json_out.xlsx" templateFile="templates/study01/excelJson.xlsx"
-        engine="jxls">
+                  engine="jxls">
             <acceptDataModel>json</acceptDataModel>
         </template>
 
@@ -72,5 +72,26 @@
                   engine="jxls">
             <acceptDataModel>lineList</acceptDataModel>
         </template>
+
+
+        <!-- java 源码处理 begin-->
+        <template id="javaSourceMethodList" name="Java源码获取方法列表"
+                  destFile="/study02_output/methodList.txt" templateFile="templates/study02/javaSourceMethodList.gsp">
+            <acceptDataModel>javaSource</acceptDataModel>
+        </template>
+
+        <!-- Java源码复制属性 -->
+        <template id="javaSourceCopyBean" name="Java源码复制属性"
+                  destFile="/study02_output/copyBean.txt" templateFile="templates/study02/javaSourceCopyBean.gsp">
+            <acceptDataModel>javaSource</acceptDataModel>
+        </template>
+
+        <!-- 生成数据库表模型 -->
+        <template id="javaSourceToTableModel" name="Java源码生成tableModel"
+                  destFile="/study02_output/toTableModel.txt"
+                  templateFile="templates/study02/javaSourceToTableModel.gsp">
+            <acceptDataModel>javaSource</acceptDataModel>
+        </template>
+
     </templates>
 </autoMake>
