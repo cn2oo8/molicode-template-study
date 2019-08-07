@@ -1,7 +1,24 @@
-# molicode-template-study
-molicode-template-study 是一个学习使用molicode的模板工程。主要的使用介绍可以通过以下两个地址获取：
+# MoliCode学习工程
 
-使用molicode进行json数据处理 [https://my.oschina.net/davidzhang/blog/3034658](https://my.oschina.net/davidzhang/blog/3034658)
+## 1.说明
+molicode-template-study 是一个学习使用molicode的模板工程。
+我们分章节对其进行讲解，建议您按章节进行学习，这样讲解才有连续性。
 
-使用molicode生成excel
-[https://my.oschina.net/davidzhang/blog/3036540](https://my.oschina.net/davidzhang/blog/3036540)
+
+## 2 章节目录
+
+### chapter01 模板开发基础学习  
+ 用于讲解molicode模板的基本原理，和一些最基本的使用方式；
+ 
+目录在：template-study-chapter01;
+
+ 视屏讲解地址：待补充...
+ 
+### chapter02 数据模型讲解
+ 用于讲解tableModel的数据结构；
+ 
+目录在：template-study-chapter02;
+
+视屏讲解地址：待补充...
+
+
