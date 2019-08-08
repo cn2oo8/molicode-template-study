@@ -41,8 +41,25 @@
 
     <templates>
 
-        <template id="getProvinceId" name="获取省份id列表"
-                  destFile="/study_output/getProvinceId.txt" templateFile="templates/study01/getProvinceId.gsp">
+        <template id="javaBean" name="javaBean"
+                  destFile="/${config.artifactId}-domain/src/main/java/${PubUtils.packageToPath(config.basePackage)}/domain/${PubUtils.packageToPath(config.category)}/${tableDefine.id}.java" templateFile="templates/java/bean.gsp" engine="groovy">
+            <desc>基于lombok的java bean</desc>
+            <acceptDataModel>tableModel</acceptDataModel>
+        </template>
+
+
+        <template id="mybatisDaoIntf" name="mybatis dao接口"
+                  destFile="/${config.artifactId}-dao/src/main/java/${PubUtils.packageToPath(config.basePackage)}/dao/${PubUtils.packageToPath(config.category)}/${tableDefine.id}Dao.java"
+                  templateFile="templates/java/daoIntf.gsp" engine="groovy">
+            <desc>适配mybatis的dao接口</desc>
+            <acceptDataModel>tableModel</acceptDataModel>
+        </template>
+
+
+        <template id="controller" name="controller"
+                  destFile="/${config.artifactId}-web/src/main/java/${PubUtils.packageToPath(config.basePackage)}/controller/${PubUtils.packageToPath(config.category)}/${tableDefine.id}Controller.java"
+                  templateFile="templates/java/controller.gsp" engine="groovy">
+            <desc>springMvc controller</desc>
             <acceptDataModel>tableModel</acceptDataModel>
         </template>
 

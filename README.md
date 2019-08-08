@@ -12,6 +12,8 @@ molicode-template-study 是一个学习使用molicode的模板工程。
  
 目录在：template-study-chapter01;
 
+文档地址：[模板开发基础学习README](./template-study-chapter01/README.md)
+
  视屏讲解地址：待补充...
  
 ### chapter02 数据模型讲解
