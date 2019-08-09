@@ -1,7 +1,7 @@
 <%
     def columns=tableDefine.columns;
 %>
-package com.shareyi.study.springcloud.domain;
+package ${config.basePackage};
 
 import lombok.Getter;
 import lombok.Setter;
