@@ -56,12 +56,5 @@
         </template>
 
 
-        <template id="controller" name="controller"
-                  destFile="/${config.artifactId}-web/src/main/java/${PubUtils.packageToPath(config.basePackage)}/controller/${PubUtils.packageToPath(config.category)}/${tableDefine.id}Controller.java"
-                  templateFile="templates/java/controller.gsp" engine="groovy">
-            <desc>springMvc controller</desc>
-            <acceptDataModel>tableModel</acceptDataModel>
-        </template>
-
     </templates>
 </autoMake>

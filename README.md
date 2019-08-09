@@ -9,7 +9,7 @@ molicode-template-study 是一个学习使用molicode的模板工程。
 
 ### chapter01 模板开发基础学习  
 * 说明： 用于讲解molicode模板的基本原理，和一些最基本的使用方式；
-* 示例目录：template-study-chapter01;
+* 示例目录：[template-study-chapter01](./template-study-chapter01);
 * 文档地址：[模板开发基础学习及工具类等说明](./template-study-chapter01/README.md)
 * 视屏地址：待补充...
  
