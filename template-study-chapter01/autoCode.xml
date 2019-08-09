@@ -41,7 +41,7 @@
 
 
     <templates>
-        <template id="lombokBean" name="lombok javaBean"
+        <template id="lombokBean" name="lombok javaBean v2"
                   destFile="/${config.artifactId}-domain/src/main/java/${PubUtils.packageToPath(config.basePackage)}/domain/${PubUtils.packageToPath(config.category)}/${tableDefine.id}.java"
                   templateFile="templates/java/lombokBean.gsp" engine="groovy">
             <acceptDataModel>tableModel</acceptDataModel>

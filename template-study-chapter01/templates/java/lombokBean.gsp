@@ -20,11 +20,12 @@ public class ${tableDefine.id} {
 
 <%
      columns.each{ column ->
+         def dataType =tableNameUtil.getDataType(column.columnType)
          %>
     /**
      * ${column.cnname}
      */
-    private String ${column.dataName};
+    private ${dataType} ${column.dataName};
 <%
      }
 %>
