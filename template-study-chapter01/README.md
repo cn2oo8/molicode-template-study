@@ -3,7 +3,9 @@
 ## 章节说明
 第一章节讲解模板开发的基本流程和方式；
 
-视屏教程：待补充；
+### 视屏教程
+* 优酷：[https://v.youku.com/v_show/id_XNDMwNzU1NzY0MA==.html](https://v.youku.com/v_show/id_XNDMwNzU1NzY0MA==.html)
+* 西瓜视屏（无广告）: 待补充；
 
 ## 模板资源存储
 我们所有的模板资源，建议托管到git仓库里面，方便大家发布和更新资源。如果是公开的可以推送到public仓库，如果公司内部私有的可以推送到私有仓库。
