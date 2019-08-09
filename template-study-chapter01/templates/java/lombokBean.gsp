@@ -11,7 +11,7 @@ import lombok.ToString;
  * ${tableDefine.cnname}测试
  *
  * @author ${config.author}
- * @date ${config.date}
+ * @date ${config.nowDate}
  */
 @Getter
 @Setter
