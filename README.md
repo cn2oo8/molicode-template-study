@@ -23,9 +23,9 @@ molicode-template-study 是一个学习使用molicode的模板工程。
 
 ### chapter03 自定义数据处理和工具
 * 说明： 用于讲解数据预处理的自定义，自定义常用工具等；
-* 示例目录：template-study-chapter03;
-* 文档地址：待补充
-* 视屏地址：待补充...
+* 示例目录：[template-study-chapter03](template-study-chapter03);
+* 文档地址：[自定义数据处理和工具](template-study-chapter03/README.md);
+* 视屏地址：很简单，直接看文档；
 
 
 ### chapter04 其它数据模型
