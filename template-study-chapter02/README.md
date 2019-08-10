@@ -17,90 +17,90 @@ tableDefine.columns 为数据库所有的列 list;
 
 ```javascript
 {
-  	'tableDefine':{
-      'dbTableName':'ac_project',
-  		'id':'AcProject',
-      'cnname':'项目',
-  		'varDomainName':'acProject'
-  		'columns':[
-  			{
-  				'canBeNull':false,
-  				'cnname':'id',
-  				'columnName':'id',
-  				'columnType':'INT',
-  				'comment':'id',
-  				'dataName':'id',
-  				'isPK':true,
-  				'jspTag':'TEXT',
-  				'length':10,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'名称',
-  				'columnName':'name',
-  				'columnType':'VARCHAR',
-  				'comment':'名称',
-  				'dataName':'name',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':50,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'类型',
-  				'columnName':'type',
-  				'columnType':'INT',
-  				'comment':'类型:1.本地，2.仓库',
-  				'dataName':'type',
-  				'dictName':'acProject_type_DICT',
-  				'isPK':false,
-  				'jspTag':'SELECT',
-  				'length':10,
-  				'readonly':false
-  			}
-  		],
-  		'pkColumn':{
-  			'canBeNull':false,
-  			'cnname':'id',
-  			'columnName':'id',
-  			'columnType':'INT',
-  			'comment':'id',
-  			'dataName':'id',
-  			'isPK':true,
-  			'jspTag':'TEXT',
-  			'length':10,
-  			'readonly':false
-  		}
-  	},
-    'bizFieldsMap':{	
-        'allColumn':'id,name,type,created,modified',
-        'addList':'id,name,type',
-        'updateList':'id,name,type,created,modified',
-  			'queryList':'id,name,type,created,modified',
-  			'viewList':'id,name,type,created,modified',
-        'searchKey':'id,name,type',
-  			'createTime':'created',
-  			'updateTime':'modified'
-  	},
-  	'dictMap':{
-  		'acProject_type_DICT':{
-  			'id':'acProject_type_DICT',
-  			'name':'type字段的字典项',
-  			'optionList':[
-  				{
-  					'name':'本地',
-  					'value':'1'
-  				},
-  				{
-  					'name':'仓库',
-  					'value':'2'
-  				}
-  			]
-  		}
-  	}
+  "tableDefine": {
+    "dbTableName": "ac_project",
+    "id": "AcProject",
+    "cnname": "项目",
+    "varDomainName": "acProject",
+    "columns": [
+      {
+        "canBeNull": false,
+        "cnname": "id",
+        "columnName": "id",
+        "columnType": "INT",
+        "comment": "id",
+        "dataName": "id",
+        "isPK": true,
+        "jspTag": "TEXT",
+        "length": 10,
+        "readonly": false
+      },
+      {
+        "canBeNull": true,
+        "cnname": "名称",
+        "columnName": "name",
+        "columnType": "VARCHAR",
+        "comment": "名称",
+        "dataName": "name",
+        "isPK": false,
+        "jspTag": "TEXT",
+        "length": 50,
+        "readonly": false
+      },
+      {
+        "canBeNull": true,
+        "cnname": "类型",
+        "columnName": "type",
+        "columnType": "INT",
+        "comment": "类型:1.本地，2.仓库",
+        "dataName": "type",
+        "dictName": "acProject_type_DICT",
+        "isPK": false,
+        "jspTag": "SELECT",
+        "length": 10,
+        "readonly": false
+      }
+    ],
+    "pkColumn": {
+      "canBeNull": false,
+      "cnname": "id",
+      "columnName": "id",
+      "columnType": "INT",
+      "comment": "id",
+      "dataName": "id",
+      "isPK": true,
+      "jspTag": "TEXT",
+      "length": 10,
+      "readonly": false
+    }
+  },
+  "bizFieldsMap": {
+    "allColumn": "id,name,type,created,modified",
+    "addList": "id,name,type",
+    "updateList": "id,name,type,created,modified",
+    "queryList": "id,name,type,created,modified",
+    "viewList": "id,name,type,created,modified",
+    "searchKey": "id,name,type",
+    "createTime": "created",
+    "updateTime": "modified"
+  },
+  "dictMap": {
+    "acProject_type_DICT": {
+      "id": "acProject_type_DICT",
+      "name": "type字段的字典项",
+      "optionList": [
+        {
+          "name": "本地",
+          "value": "1"
+        },
+        {
+          "name": "仓库",
+          "value": "2"
+        }
+      ]
+    }
   }
+}
 ```
 
 
@@ -120,13 +120,25 @@ tableModel(表模型)
   |						|__length(长度)，comment(备注), isPK(是否主键), jspTag(展示类型)
   |						|__canBeNull(是否可为空)，dictName(字典项名称)，readonly(是否只读)
   |
-  |_____ bizFieldMap(业务字段map)
-  |			|
-  |			|__allColumn(全部列名称)
-  |			|
-  |			|__allColumn(全部列名称)
-  |			|
-  |			|__allColumn(全部列名称)
+  |___ bizFieldMap(业务字段map)
+  |				|
+  |				|__allColumn(全部列名称列表，逗号分隔)
+  |				|__addList(新增列名称列表，逗号分隔)
+  |				|__updateList (修改列名称列表，逗号分隔)
+  |				|__queryList (查询列名称列表，逗号分隔)
+  |				|__viewList (查看列名称列表，逗号分隔)
+  |				|__createTime (创建时间列名称)
+  |				|__updateTime (修改时间列名称)
+  |
+  |__dictMap(字典项map，略)
   
 ```
+
+
+
+
+
+## 内置的工具类
+
+
 

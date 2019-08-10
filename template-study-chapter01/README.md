@@ -123,93 +123,93 @@ autoCode.xml  描述整个模板的信息；
 
   **tableModel的一般json如下：**
 
-  ```javascript
+```javascript
 {
-  	'tableDefine':{
-      'dbTableName':'ac_project',
-  		'id':'AcProject',
-      'cnname':'项目',
-  		'varDomainName':'acProject'
-  		'columns':[
-  			{
-  				'canBeNull':false,
-  				'cnname':'id',
-  				'columnName':'id',
-  				'columnType':'INT',
-  				'comment':'id',
-  				'dataName':'id',
-  				'isPK':true,
-  				'jspTag':'TEXT',
-  				'length':10,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'名称',
-  				'columnName':'name',
-  				'columnType':'VARCHAR',
-  				'comment':'名称',
-  				'dataName':'name',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':50,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'类型',
-  				'columnName':'type',
-  				'columnType':'INT',
-  				'comment':'类型:1.本地，2.仓库',
-  				'dataName':'type',
-  				'dictName':'acProject_type_DICT',
-  				'isPK':false,
-  				'jspTag':'SELECT',
-  				'length':10,
-  				'readonly':false
-  			}
-  		],
-  		'pkColumn':{
-  			'canBeNull':false,
-  			'cnname':'id',
-  			'columnName':'id',
-  			'columnType':'INT',
-  			'comment':'id',
-  			'dataName':'id',
-  			'isPK':true,
-  			'jspTag':'TEXT',
-  			'length':10,
-  			'readonly':false
-  		}
-  	},
-    'bizFieldsMap':{	
-        'allColumn':'id,name,type,created,modified',
-        'addList':'id,name,type',
-        'updateList':'id,name,type,created,modified',
-  			'queryList':'id,name,type,created,modified',
-  			'viewList':'id,name,type,created,modified',
-        'searchKey':'id,name,type',
-  			'createTime':'created',
-  			'updateTime':'modified'
-  	},
-  	'dictMap':{
-  		'acProject_type_DICT':{
-  			'id':'acProject_type_DICT',
-  			'name':'type字段的字典项',
-  			'optionList':[
-  				{
-  					'name':'本地',
-  					'value':'1'
-  				},
-  				{
-  					'name':'仓库',
-  					'value':'2'
-  				}
-  			]
-  		}
-  	}
+  "tableDefine": {
+    "dbTableName": "ac_project",
+    "id": "AcProject",
+    "cnname": "项目",
+    "varDomainName": "acProject",
+    "columns": [
+      {
+        "canBeNull": false,
+        "cnname": "id",
+        "columnName": "id",
+        "columnType": "INT",
+        "comment": "id",
+        "dataName": "id",
+        "isPK": true,
+        "jspTag": "TEXT",
+        "length": 10,
+        "readonly": false
+      },
+      {
+        "canBeNull": true,
+        "cnname": "名称",
+        "columnName": "name",
+        "columnType": "VARCHAR",
+        "comment": "名称",
+        "dataName": "name",
+        "isPK": false,
+        "jspTag": "TEXT",
+        "length": 50,
+        "readonly": false
+      },
+      {
+        "canBeNull": true,
+        "cnname": "类型",
+        "columnName": "type",
+        "columnType": "INT",
+        "comment": "类型:1.本地，2.仓库",
+        "dataName": "type",
+        "dictName": "acProject_type_DICT",
+        "isPK": false,
+        "jspTag": "SELECT",
+        "length": 10,
+        "readonly": false
+      }
+    ],
+    "pkColumn": {
+      "canBeNull": false,
+      "cnname": "id",
+      "columnName": "id",
+      "columnType": "INT",
+      "comment": "id",
+      "dataName": "id",
+      "isPK": true,
+      "jspTag": "TEXT",
+      "length": 10,
+      "readonly": false
+    }
+  },
+  "bizFieldsMap": {
+    "allColumn": "id,name,type,created,modified",
+    "addList": "id,name,type",
+    "updateList": "id,name,type,created,modified",
+    "queryList": "id,name,type,created,modified",
+    "viewList": "id,name,type,created,modified",
+    "searchKey": "id,name,type",
+    "createTime": "created",
+    "updateTime": "modified"
+  },
+  "dictMap": {
+    "acProject_type_DICT": {
+      "id": "acProject_type_DICT",
+      "name": "type字段的字典项",
+      "optionList": [
+        {
+          "name": "本地",
+          "value": "1"
+        },
+        {
+          "name": "仓库",
+          "value": "2"
+        }
+      ]
+    }
   }
-  ```
+}
+```
 
   
 
