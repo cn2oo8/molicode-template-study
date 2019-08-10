@@ -124,49 +124,12 @@ autoCode.xml  描述整个模板的信息；
   **tableModel的一般json如下：**
 
   ```javascript
-  {
-  	'bizFieldsMap':{
-  		'viewList':'id,name,remark,project_key,type,ext1,ext2,ext3,creator,operator,concurrent_version,data_version,status,created,modified',
-  		'createTime':'created',
-  		'allColumn':'id,name,remark,project_key,type,ext1,ext2,ext3,creator,operator,concurrent_version,data_version,status,created,modified',
-  		'addList':'id,name,remark,project_key,type,ext1,ext2,ext3,creator,operator,concurrent_version,data_version,status',
-  		'updateTime':'modified',
-  		'searchKey':'id,name,type,status',
-  		'queryList':'id,name,remark,project_key,type,creator,operator,concurrent_version,data_version,status,created,modified',
-  		'updateList':'id,name,remark,project_key,type,ext1,ext2,ext3,creator,operator,concurrent_version,data_version,status'
-  	},
-  	'dictMap':{
-  		'acProject_type_DICT':{
-  			'id':'acProject_type_DICT',
-  			'name':'type字段的字典项',
-  			'optionList':[
-  				{
-  					'name':'本地',
-  					'value':'1'
-  				},
-  				{
-  					'name':'仓库',
-  					'value':'2'
-  				}
-  			]
-  		},
-  		'acProject_status_DICT':{
-  			'id':'acProject_status_DICT',
-  			'name':'status字段的字典项',
-  			'optionList':[
-  				{
-  					'name':'有效',
-  					'value':'1'
-  				},
-  				{
-  					'name':'无效',
-  					'value':'-1'
-  				}
-  			]
-  		}
-  	},
+{
   	'tableDefine':{
-  		'cnname':'项目',
+      'dbTableName':'ac_project',
+  		'id':'AcProject',
+      'cnname':'项目',
+  		'varDomainName':'acProject'
   		'columns':[
   			{
   				'canBeNull':false,
@@ -194,30 +157,6 @@ autoCode.xml  描述整个模板的信息；
   			},
   			{
   				'canBeNull':true,
-  				'cnname':'备注',
-  				'columnName':'remark',
-  				'columnType':'VARCHAR',
-  				'comment':'备注',
-  				'dataName':'remark',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':500,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'项目key',
-  				'columnName':'project_key',
-  				'columnType':'VARCHAR',
-  				'comment':'项目key',
-  				'dataName':'projectKey',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':50,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
   				'cnname':'类型',
   				'columnName':'type',
   				'columnType':'INT',
@@ -228,131 +167,8 @@ autoCode.xml  描述整个模板的信息；
   				'jspTag':'SELECT',
   				'length':10,
   				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'扩展1',
-  				'columnName':'ext1',
-  				'columnType':'VARCHAR',
-  				'comment':'扩展1',
-  				'dataName':'ext1',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':50,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'扩展2',
-  				'columnName':'ext2',
-  				'columnType':'VARCHAR',
-  				'comment':'扩展2',
-  				'dataName':'ext2',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':50,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'扩展3',
-  				'columnName':'ext3',
-  				'columnType':'VARCHAR',
-  				'comment':'扩展3',
-  				'dataName':'ext3',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':50,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'创建人',
-  				'columnName':'creator',
-  				'columnType':'VARCHAR',
-  				'comment':'创建人',
-  				'dataName':'creator',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':20,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'修改人',
-  				'columnName':'operator',
-  				'columnType':'VARCHAR',
-  				'comment':'修改人',
-  				'dataName':'operator',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':20,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'并发版本号',
-  				'columnName':'concurrent_version',
-  				'columnType':'BIGINT',
-  				'comment':'并发版本号',
-  				'dataName':'concurrentVersion',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':19,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'数据版本',
-  				'columnName':'data_version',
-  				'columnType':'BIGINT',
-  				'comment':'数据版本',
-  				'dataName':'dataVersion',
-  				'isPK':false,
-  				'jspTag':'TEXT',
-  				'length':19,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'状态',
-  				'columnName':'status',
-  				'columnType':'TINYINT',
-  				'comment':'状态：1.有效，-1.无效',
-  				'dataName':'status',
-  				'dictName':'acProject_status_DICT',
-  				'isPK':false,
-  				'jspTag':'SELECT',
-  				'length':3,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'创建时间',
-  				'columnName':'created',
-  				'columnType':'DATETIME',
-  				'comment':'创建时间',
-  				'dataName':'created',
-  				'isPK':false,
-  				'jspTag':'DATETIME',
-  				'length':19,
-  				'readonly':false
-  			},
-  			{
-  				'canBeNull':true,
-  				'cnname':'修改时间',
-  				'columnName':'modified',
-  				'columnType':'DATETIME',
-  				'comment':'修改时间',
-  				'dataName':'modified',
-  				'isPK':false,
-  				'jspTag':'DATETIME',
-  				'length':19,
-  				'readonly':false
   			}
   		],
-  		'dbTableName':'ac_project',
-  		'id':'AcProject',
   		'pkColumn':{
   			'canBeNull':false,
   			'cnname':'id',
@@ -364,8 +180,33 @@ autoCode.xml  描述整个模板的信息；
   			'jspTag':'TEXT',
   			'length':10,
   			'readonly':false
-  		},
-  		'varDomainName':'acProject'
+  		}
+  	},
+    'bizFieldsMap':{	
+        'allColumn':'id,name,type,created,modified',
+        'addList':'id,name,type',
+        'updateList':'id,name,type,created,modified',
+  			'queryList':'id,name,type,created,modified',
+  			'viewList':'id,name,type,created,modified',
+        'searchKey':'id,name,type',
+  			'createTime':'created',
+  			'updateTime':'modified'
+  	},
+  	'dictMap':{
+  		'acProject_type_DICT':{
+  			'id':'acProject_type_DICT',
+  			'name':'type字段的字典项',
+  			'optionList':[
+  				{
+  					'name':'本地',
+  					'value':'1'
+  				},
+  				{
+  					'name':'仓库',
+  					'value':'2'
+  				}
+  			]
+  		}
   	}
   }
   ```

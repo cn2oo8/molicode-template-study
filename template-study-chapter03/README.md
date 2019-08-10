@@ -107,6 +107,8 @@
 **输出结果：**
 
 ```shell
-
+模板页面 say: Hello world! 
+自定义数据 key: myData01，value:my first custom data value
+自定义数据 key: helloInfo，value:David say: welcome to moliCode!! 
 ```
 
