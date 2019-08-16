@@ -97,5 +97,8 @@
                   destFile="/study_output/jsonConfigTest.txt" templateFile="templates/study01/jsonConfigTest.gsp">
         </template>
 
+        <template id="helloVm" name="helloVm"
+                  destFile="/study_output/helloVm.txt" templateFile="templates/study01/helloVm.vm">
+        </template>
     </templates>
 </autoMake>
