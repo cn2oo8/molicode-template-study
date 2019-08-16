@@ -98,7 +98,7 @@
         </template>
 
         <template id="helloVm" name="helloVm"
-                  destFile="/study_output/helloVm.txt" templateFile="templates/study01/helloVm.vm">
+                  destFile="/study_output/helloVm.txt" templateFile="templates/study01/helloVm.vm" engine="velocity">
         </template>
     </templates>
 </autoMake>
