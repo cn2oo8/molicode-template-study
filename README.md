@@ -9,12 +9,8 @@ molicode-template-study 是一个学习使用molicode的模板工程。
 [系统gitee主页](https://gitee.com/zhangshibin1987/molicode)
 
 MoliCode使用介绍视屏教程：
-
-* 西瓜视频: 
-[https://www.ixigua.com/i6721698395569783304/](https://www.ixigua.com/i6721698395569783304/)
-
-* 优酷：
-[https://v.youku.com/v_show/id_XNDMwMTg5ODQ3Mg==.html](https://v.youku.com/v_show/id_XNDMwMTg5ODQ3Mg==.html)
+* [西瓜视频](https://www.ixigua.com/i6721698395569783304/)
+* [优酷视屏](https://v.youku.com/v_show/id_XNDMwMTg5ODQ3Mg==.html)
 
 请访问以下地址，查看帮助文档： https://cn2oo8.github.io/molicode_doc
 
