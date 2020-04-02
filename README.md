@@ -12,7 +12,7 @@ MoliCode使用介绍视屏教程：
 * [西瓜视频](https://www.ixigua.com/i6721698395569783304/)
 * [优酷视屏](https://v.youku.com/v_show/id_XNDMwMTg5ODQ3Mg==.html)
 
-请访问以下地址，查看帮助文档： https://cn2oo8.github.io/molicode_doc
+请访问以下地址，查看帮助文档： http://molicode_repo.gitee.io/molicode_doc/
 
 模板中心请访问： https://gitee.com/molicode_repo/molicode_template_awesome
 

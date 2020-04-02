@@ -99,7 +99,7 @@ autoCode.xml  描述整个模板的信息；
 
 后期可扩展：freemarker, thymeleaf等；
 
-请访问以下地址，查看帮助文档：https://cn2oo8.github.io/molicode_doc/template/
+请访问以下地址，查看帮助文档：http://molicode_repo.gitee.io/molicode_doc//template/
 
 
 
@@ -223,7 +223,7 @@ autoCode.xml  描述整个模板的信息；
 * key: PubUtils 指向：com.shareyi.molicode.common.utils.PubUtils  说明：参考api文档；
 * key: snippetTemplateUtil, dictUtil  指向：com.shareyi.molicode.common.utils.SnippetTemplateUtil  说明：模板片段工具类，用于字典项转换等处理；
 
- api文档地址：[https://cn2oo8.github.io/molicode_doc/api/](https://cn2oo8.github.io/molicode_doc/api/)
+ api文档地址：[http://molicode_repo.gitee.io/molicode_doc/](http://molicode_repo.gitee.io/molicode_doc/)
 
 ### 第三方工具类
 
