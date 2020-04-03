@@ -28,9 +28,9 @@ autoCode.xml  描述整个模板的信息；
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <autoMake
-        xmlns="https://cn2oo8.github.io/molicode_doc/schema/autoCode"
+        xmlns="http://molicode_repo.gitee.io/molicode_doc/schema/autoCode"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="https://cn2oo8.github.io/molicode_doc/schema/autoCode https://cn2oo8.github.io/molicode_doc/schema/autoCode/autoCode-1.0.xsd">
+        xsi:schemaLocation="http://molicode_repo.gitee.io/molicode_doc/schema/autoCode http://molicode_repo.gitee.io/molicode_doc/schema/autoCode/autoCode-1.0.xsd">
 
     <moliCodeVersion>1.0.0</moliCodeVersion>
 
@@ -247,4 +247,4 @@ autoCode.xml  描述整个模板的信息；
 
 参考以下API说明：
 
-https://cn2oo8.github.io/molicode_doc/api/
+http://molicode_repo.gitee.io/molicode_doc/api/
